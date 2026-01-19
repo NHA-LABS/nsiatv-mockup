@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NSIA – Charte Graphique Digitale</title>
+
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- TAILWIND CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+:root{
+    --nsia-blue:#001E60;
+    --nsia-gold:#D29F13;
+    --nsia-grey:#60605E;
+    --nsia-light:#f4f4f4;
+}
+body{
+    font-family:'Noto Sans',sans-serif;
+    color:var(--nsia-blue);
+}
+.section-title{
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:2rem;
+    position:relative;
+}
+.section-title::after{
+    content:'';
+    width:60px;
+    height:4px;
+    background:var(--nsia-gold);
+    position:absolute;
+    bottom:-10px;
+    left:0;
+}
+.card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+</style>
+</head>
+
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="bg-[var(--nsia-blue)] text-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <img src="assets/images /logow1.png" class="h-20">
+        <nav class="space-x-6 text-sm">
+            <a href="#intro" class="hover:text-[var(--nsia-gold)]">Introduction</a>
+            <a href="#colors" class="hover:text-[var(--nsia-gold)]">Couleurs</a>
+            <a href="#logo" class="hover:text-[var(--nsia-gold)]">Logo</a>
+            <a href="#typo" class="hover:text-[var(--nsia-gold)]">Typographie</a>
+            <a href="#layout" class="hover:text-[var(--nsia-gold)]">Layout</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="intro" class="relative h-[80vh] flex items-center justify-center text-center overflow-hidden">
+    <img src="assets/images/b1.jpg" class="absolute inset-0 w-full h-full object-cover opacity-25">
+    <div class="relative z-10 max-w-4xl px-6">
+        <h1 class="text-5xl font-bold mb-6">
+            Charte Graphique Digitale
+            <span class="text-[var(--nsia-gold)]">NSIA</span>
+        </h1>
+        <p class="text-xl italic text-[var(--nsia-gold)] mb-6">
+            Le vrai visage de l’Assurance et de la Banque
+        </p>
+        <p class="text-sm text-gray-200 tracking-wide">
+            Transparence • Dynamisme • Cohérence Digitale
+        </p>
+    </div>
+</section>
+
+<!-- COULEURS -->
+<section id="colors" class="py-20 px-6 max-w-7xl mx-auto">
+    <h2 class="section-title">Palette Colorimétrique</h2>
+
+    <div class="grid md:grid-cols-4 gap-8">
+        <div class="card">
+            <div class="h-32 bg-[var(--nsia-blue)]"></div>
+            <div class="p-4">
+                <strong>#001E60</strong><br>Bleu NSIA
+            </div>
+        </div>
+        <div class="card">
+            <div class="h-32 bg-[var(--nsia-gold)]"></div>
+            <div class="p-4">
+                <strong>#D29F13</strong><br>Jaune Or
+            </div>
+        </div>
+        <div class="card">
+            <div class="h-32 bg-white border"></div>
+            <div class="p-4">
+                <strong>#FFFFFF</strong><br>Blanc
+            </div>
+        </div>
+        <div class="card">
+            <div class="h-32 bg-gray-500"></div>
+            <div class="p-4">
+                <strong>#60605E</strong><br>Gris Corporate
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-[var(--nsia-blue)] text-white rounded-xl">
+            Couleur dominante de confiance et d’institution
+        </div>
+        <div class="p-6 bg-[var(--nsia-gold)] text-[var(--nsia-blue)] rounded-xl">
+            Accent de prestige et valorisation
+        </div>
+        <div class="p-6 bg-gray-100 rounded-xl">
+            Lisibilité et respiration visuelle
+        </div>
+    </div>
+</section>
+
+<!-- LOGO -->
+<section id="logo" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-center">
+            <img src="assets/images/logoa.png" class="mx-auto max-w-xs">
+            <img src="assets/images/logob1.png  " class="mx-auto mt-6 opacity-20">
+        </div>
+        <div>
+            <h2 class="section-title">Utilisation du Logo</h2>
+            <ul class="list-disc ml-5 space-y-3">
+                <li>Respect de la zone de protection (unité « a »)</li>
+                <li>Fond bleu ou blanc uniquement</li>
+                <li>Aucune déformation ou recoloration</li>
+                <li>Logo jaune or interdit</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- TYPO -->
+<section id="typo" class="py-20 px-6 max-w-7xl mx-auto">
+    <h2 class="section-title">Typographie</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-8">
+            <h3 class="text-xl font-bold mb-4">Noto Sans</h3>
+            <div class="text-5xl font-bold mb-4">Aa Bb Cc</div>
+            <p>
+                NSIA accompagne les Africains avec confiance, innovation et engagement.
+            </p>
+        </div>
+        <div class="card p-8">
+            <h3 class="text-xl font-bold mb-4">Arial Narrow</h3>
+            <div class="text-5xl mb-4" style="font-family:Arial Narrow">
+                Aa Bb Cc
+            </div>
+            <p>Utilisation bureautique et exergue.</p>
+        </div>
+    </div>
+</section>
+
+<!-- LAYOUT -->
+<section id="layout" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+        <div>
+            <h2 class="section-title">Mise en page Digitale</h2>
+            <ul class="list-disc ml-5 space-y-3">
+                <li>Grille verticale en 6 unités</li>
+                <li>Baseline bleue en bas de visuel</li>
+                <li>Logo positionné à droite</li>
+                <li>Images lumineuses et humaines</li>
+            </ul>
+        </div>
+        <div class="relative rounded-xl overflow-hidden shadow-lg">
+            <img src="assets/images/layout.png" class="w-full">
+            <span class="absolute top-4 left-4 bg-white/80 px-3 py-1 text-xs rounded">
+                Exemple de layout NSIA
+            </span>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[var(--nsia-blue)] text-white py-12 text-center">
+    <img src="assets/images/logow1.png" class="h-10 mx-auto mb-4">
+    <p class="text-sm opacity-80">
+        Charte Graphique Digitale – Groupe NSIA
+    </p>
+    <p class="text-xs opacity-60 mt-2">
+        Document de référence – Usage interne et partenaires
+    </p>
+</footer>
+
+</body>
+</html>

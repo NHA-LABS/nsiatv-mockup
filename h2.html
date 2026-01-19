@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charte Graphique Web - NSIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-nsia: #001E60; /* Bleu NSIA [cite: 33] */
+            --gold-nsia: #D29F13; /* Or NSIA [cite: 33] */
+            --grey-nsia: #60605E; /* Gris NSIA [cite: 38] */
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif; /* Typo principale [cite: 50] */
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--white);
+        }
+
+        header {
+            background-color: var(--blue-nsia);
+            color: var(--white);
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        .hero {
+            padding: 4rem 5%;
+            background: linear-gradient(135deg, var(--blue-nsia) 60%, var(--gold-nsia));
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero h1 { margin: 0; font-size: 2.5rem; }
+        .hero p { font-style: italic; font-size: 1.2rem; }
+
+        section { padding: 3rem 5%; }
+        h2 { color: var(--blue-nsia); border-left: 5px solid var(--gold-nsia); padding-left: 15px; }
+
+        /* Couleurs */
+        .color-palette { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+        .color-card { flex: 1; min-width: 200px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+        .color-swatch { height: 100px; }
+        .color-info { padding: 10px; font-size: 0.9rem; }
+
+        /* Éléments Graphiques */
+        .arc-box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px dashed var(--blue-nsia);
+        }
+
+        /* Grille pour les icônes et images */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .card { border: 1px solid #eee; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+        footer { background: #f9f9f9; padding: 2rem; text-align: center; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">NSIA</div>
+        <p>Charte Graphique Digitale 2025-2026</p>
+    </header>
+
+    <div class="hero">
+        <h1>Le vrai visage de l'Assurance</h1>
+        <p>"Depuis 1995, nous avançons au rythme des rêves et des défis du continent."</p>
+    </div>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>NSIA incarne l'africanité et l'authenticité à travers des symboles forts : les deux arcs entremêlés, exprimant la collaboration et la complicité du partenariat professionnel[cite: 8, 137].</p>
+        <p><strong>Mots-clés :</strong> Transparence, Dynamisme, Modernité[cite: 23, 184].</p>
+    </section>
+
+    <section id="couleurs">
+        <h2>Palette de Couleurs Principale</h2>
+        <div class="color-palette">
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #001E60;"></div>
+                <div class="color-info"><strong>Bleu NSIA</strong><br>WEB: #001E60<br>Confiance & Sécurité [cite: 9, 33]</div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #D29F13;"></div>
+                <div class="color-info"><strong>Or NSIA</strong><br>WEB: #D29F13<br>Prestige & Richesse [cite: 9, 33]</div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #FFFFFF; border-bottom: 1px solid #eee;"></div>
+                <div class="color-info"><strong>Blanc</strong><br>Pureté & Clarté [cite: 31]</div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: #60605E;"></div>
+                <div class="color-info"><strong>Gris Argent</strong><br>WEB: #60605E<br>Vision futuriste [cite: 9, 38]</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="typographie">
+        <h2>Typographie</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Noto Sans (Principale)</h3>
+                <p style="font-family: 'Noto Sans', sans-serif;">Utilisée pour tous les supports de communication officiels. Elle garantit une lisibilité maximale sur le web[cite: 50].</p>
+                <p><strong>ABCDEFGHIJKLMN abcdefghijklmn 1234567890</strong></p>
+            </div>
+            <div class="card">
+                <h3>Arial Narrow (Bureautique)</h3>
+                <p style="font-family: Arial, sans-serif;">Alternative pour les textes courts ou les besoins administratifs spécifiques[cite: 50].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="elements">
+        <h2>Éléments Graphiques</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Les Arcs Entremêlés</h3>
+                <p>Élément d'animation majeur. Il peut être utilisé en symbole de base, en contour (trame 30% min) ou en dégradé[cite: 21, 22, 181].</p>
+                <div class="arc-box"><em>[Insérer ici l'image de l'arc de la page 6]</em></div>
+            </div>
+            <div class="card">
+                <h3>Iconographie</h3>
+                <p>Les icônes doivent être bicolores (Bleu 2/3, Or 1/3) ou monochromes (Bleu ou Blanc). Elles structurent la clarté des messages[cite: 27, 29].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="imagerie">
+        <h2>Principes d'Imagerie Web</h2>
+        <ul>
+            <li>Images lumineuses, chaleureuses et réalistes[cite: 55].</li>
+            <li>Focus sur l'humain avec des attitudes naturelles et positives[cite: 56].</li>
+            <li>Éviter les filtres IA trop visibles ou les images surexposées[cite: 63, 65].</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Groupe NSIA - Charte Graphique Interne</p>
+    </footer>
+
+</body>
+</html>
